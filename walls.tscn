@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://btw57klxaykkh"]
+
+[ext_resource type="Script" uid="uid://bpwbmoh6eaj0t" path="res://wall.gd" id="1_xxkwp"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_xxkwp")
+padding = 50

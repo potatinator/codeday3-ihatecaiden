@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://drbulqxqdircb"]
+
+[ext_resource type="Script" uid="uid://hgyqx601u7w" path="res://character_body_2d.gd" id="1_f50pn"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_186t8"]
+size = Vector2(512, 512)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f50pn"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_f50pn")
+speed = 200.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2.38419e-07, -7.15256e-07)
+scale = Vector2(0.0390625, 0.0585938)
+texture = SubResource("PlaceholderTexture2D_186t8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_f50pn")
