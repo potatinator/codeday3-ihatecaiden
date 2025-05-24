@@ -6,7 +6,7 @@
 size = Vector2(100, 100)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bu8al"]
-size = Vector2(100, 26)
+size = Vector2(100, 25)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
