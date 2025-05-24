@@ -6,7 +6,6 @@
 [node name="StaticBody2D2" instance=ExtResource("1_ijwhx")]
 
 [node name="MeshInstance2D" parent="." index="0"]
-position = Vector2(0, 0)
 texture = ExtResource("2_td42v")
 
 [node name="CollisionShape2D" parent="." index="1"]
