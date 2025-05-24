@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cc035hkq6trvs"
-path="res://.godot/imported/half tile with connection point on left side horiz.png-8d913652279db7c91b7d0077d1565850.ctex"
+path="res://.godot/imported/half tile with connection point on left side horiz.png-0646a2b42c3a026a114011a3091b941e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://half tile with connection point on left side horiz.png"
-dest_files=["res://.godot/imported/half tile with connection point on left side horiz.png-8d913652279db7c91b7d0077d1565850.ctex"]
+source_file="res://textures/half tile with connection point on left side horiz.png"
+dest_files=["res://.godot/imported/half tile with connection point on left side horiz.png-0646a2b42c3a026a114011a3091b941e.ctex"]
 
 [params]
 

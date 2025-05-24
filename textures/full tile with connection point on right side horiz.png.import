@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://rgeq1eflhnbt"
-path="res://.godot/imported/full tile with connection point on right side horiz.png-0ad4f98c3e0a4bee39e57bc941c4e2f8.ctex"
+path="res://.godot/imported/full tile with connection point on right side horiz.png-344350e510000b3b1661711f0ce8a8a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://full tile with connection point on right side horiz.png"
-dest_files=["res://.godot/imported/full tile with connection point on right side horiz.png-0ad4f98c3e0a4bee39e57bc941c4e2f8.ctex"]
+source_file="res://textures/full tile with connection point on right side horiz.png"
+dest_files=["res://.godot/imported/full tile with connection point on right side horiz.png-344350e510000b3b1661711f0ce8a8a8.ctex"]
 
 [params]
 

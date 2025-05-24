@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://caavb0msyb5sd"
-path="res://.godot/imported/full tile no connection point horiz.png-374e3687d25664560c4d1984cdcf1fa7.ctex"
+path="res://.godot/imported/full tile no connection point horiz.png-003148cd1badc5dee6535c8da2ccc779.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://full tile no connection point horiz.png"
-dest_files=["res://.godot/imported/full tile no connection point horiz.png-374e3687d25664560c4d1984cdcf1fa7.ctex"]
+source_file="res://textures/full tile no connection point horiz.png"
+dest_files=["res://.godot/imported/full tile no connection point horiz.png-003148cd1badc5dee6535c8da2ccc779.ctex"]
 
 [params]
 
