@@ -1,12 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://xowh45r2lj6a"]
 
-[ext_resource type="PackedScene" uid="uid://cy6o8gxrk7d3f" path="res://halftilewconhoriz.tscn" id="1_ijwhx"]
-[ext_resource type="Texture2D" uid="uid://cc035hkq6trvs" path="res://half tile with connection point on left side horiz.png" id="2_td42v"]
+[ext_resource type="PackedScene" uid="uid://cy6o8gxrk7d3f" path="res://level components/half tile with connection point on left side horiz.tscn" id="1_ijwhx"]
+[ext_resource type="Texture2D" uid="uid://cc035hkq6trvs" path="res://textures/half tile with connection point on left side horiz.png" id="2_td42v"]
 
-[node name="StaticBody2D" instance=ExtResource("1_ijwhx")]
+[node name="StaticBody2D2" instance=ExtResource("1_ijwhx")]
 
 [node name="MeshInstance2D" parent="." index="0"]
+position = Vector2(0, 0)
 texture = ExtResource("2_td42v")
 
 [node name="CollisionShape2D" parent="." index="1"]
-position = Vector2(-22, -18)
+position = Vector2(25, 3)
