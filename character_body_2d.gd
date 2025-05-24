@@ -7,6 +7,7 @@ extends CharacterBody2D
 var jump : float = -400.0
 var maxFall : float = 400.0
 @export var maxStored : float = 1000.0
+@export var storeMulti : float = 1.0
 @export var groundFric : float = 100.0
 @export var airFric : float = 10.0
 
@@ -39,16 +40,17 @@ func _physics_process(delta: float):
 	
 	if(Input.is_action_just_pressed("store")):
 		store()
-	if(Input.is_action_just_pressed("release")):
-		velocity += stored*Vector2(fric/airFric, 1.0)
-		stored = Vector2(0.0, 0.0)
 	
 	move_and_slide()
 
 func store() -> void:
-	stored += velocity
-	stored = stored.normalized() * clamp(stored.length(), 0.0, maxStored)
-	velocity = Vector2(0.0, 0.0)
+	if(stored.length() <= 0.0):
+		stored += velocity*storeMulti
+		stored = stored.normalized() * clamp(stored.length(), 0.0, maxStored)
+		velocity = Vector2(0.0, 0.0)
+	else:
+		velocity += stored*Vector2(fric/airFric, 1.0)
+		stored = Vector2(0.0, 0.0)
 
 
 func _on_area_2d_body_entered(body) -> void:
