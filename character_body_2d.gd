@@ -45,11 +45,17 @@ func _physics_process(delta: float):
 		store()
 	
 	if(velocity.length() > 20 && velocity.length() < 400):
-		animated_sprite_2d.play("walk")
+		if(is_on_floor()):
+			animated_sprite_2d.play("walk")
+		else:
+			animated_sprite_2d.play("jump")
 	elif(velocity.length() >= 400):
 		animated_sprite_2d.play("roll")
 	else:
-		animated_sprite_2d.play("idle")
+		if(is_on_floor()):
+			animated_sprite_2d.play("idle")
+		else:
+			animated_sprite_2d.play("jump")
 	
 	move_and_slide()
 
