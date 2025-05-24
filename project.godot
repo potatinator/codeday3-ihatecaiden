@@ -48,6 +48,10 @@ release={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_2="kill"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

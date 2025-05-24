@@ -16,6 +16,8 @@ var stored : Vector2 = Vector2(0.0,0.0)
 var fric : float = 0.0;
 var multi : float = 1.0;
 
+signal dieSig
+
 func _physics_process(delta: float):
 	velocity.y += clamp(GRAV*delta, -maxFall, maxFall)
 	if (is_on_floor()):
@@ -38,7 +40,7 @@ func _physics_process(delta: float):
 	if(Input.is_action_just_pressed("store")):
 		store()
 	if(Input.is_action_just_pressed("release")):
-		velocity += stored
+		velocity += stored*Vector2(fric/airFric, 1.0)
 		stored = Vector2(0.0, 0.0)
 	
 	move_and_slide()
@@ -46,5 +48,13 @@ func _physics_process(delta: float):
 func store() -> void:
 	stored += velocity
 	stored = stored.normalized() * clamp(stored.length(), 0.0, maxStored)
-	print(stored.length())
 	velocity = Vector2(0.0, 0.0)
+
+
+func _on_area_2d_body_entered(body) -> void:
+	print("die")
+	die()
+
+func die() -> void:
+	dieSig.emit()
+	get_tree().reload_current_scene()
