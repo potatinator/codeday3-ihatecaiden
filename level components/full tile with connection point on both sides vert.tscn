@@ -1,3 +1,4 @@
+
 [gd_scene load_steps=4 format=3 uid="uid://ymyiuygqahm6"]
 
 [ext_resource type="Texture2D" uid="uid://w3oenf05wupp" path="res://full tile with connection point on top vert.png" id="1_144as"]
@@ -6,11 +7,13 @@
 size = Vector2(100, 100)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ld1un"]
+
 size = Vector2(26, 100)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+
 position = Vector2(-47, -21)
 rotation = 3.14159
 mesh = SubResource("QuadMesh_ow5xn")
