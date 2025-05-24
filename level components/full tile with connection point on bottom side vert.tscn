@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bcnoc83dge48c"]
 
-[ext_resource type="Texture2D" uid="uid://de6od0gas8kto" path="res://full tile no connection point vert.png" id="1_qtx0b"]
+[ext_resource type="Texture2D" uid="uid://b03a5512e1umq" path="res://textures/full tile no connection point vert.png" id="1_qtx0b"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_xe2of"]
 size = Vector2(100, 100)

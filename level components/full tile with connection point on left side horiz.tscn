@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c4q0dkp1c85uh"]
 
-[ext_resource type="Texture2D" uid="uid://bii3duox5fmu3" path="res://full tile with connection point on right side horiz.png" id="1_pinbb"]
+[ext_resource type="Texture2D" uid="uid://22dr7ht5spf3" path="res://textures/full tile with connection point on left side1 horiz.png" id="1_pinbb"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_ow5xn"]
 size = Vector2(100, 100)
@@ -11,11 +11,9 @@ size = Vector2(100, 25)
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
-position = Vector2(-47, -21)
 rotation = 3.14159
 mesh = SubResource("QuadMesh_ow5xn")
 texture = ExtResource("1_pinbb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-47, -17.5)
 shape = SubResource("RectangleShape2D_ld1un")
