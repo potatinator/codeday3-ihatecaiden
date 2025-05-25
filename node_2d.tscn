@@ -27,3 +27,4 @@ padding = 50
 
 [node name="StaticBody2D" parent="." instance=ExtResource("5_q6r6c")]
 position = Vector2(80, 506)
+nextLVL = "res://lvl1.tscn"

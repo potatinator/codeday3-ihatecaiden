@@ -3,12 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://btw57klxaykkh" path="res://walls.tscn" id="1_1bcrd"]
 [ext_resource type="PackedScene" uid="uid://drbulqxqdircb" path="res://character_body_2d.tscn" id="2_p65l6"]
 [ext_resource type="PackedScene" uid="uid://dngpx677xb3rj" path="res://level components/full tile no connection point vert.tscn" id="3_p65l6"]
-[ext_resource type="PackedScene" path="res://big floor main.tscn" id="4_fqrjd"]
-[ext_resource type="PackedScene" path="res://big floor top main.tscn" id="5_chaov"]
-[ext_resource type="PackedScene" path="res://big floor right connect half.tscn" id="6_nm8qd"]
-[ext_resource type="PackedScene" path="res://big floor left connect half.tscn" id="7_aq45b"]
+[ext_resource type="PackedScene" uid="uid://vinovhk52fgt" path="res://big floor main.tscn" id="4_fqrjd"]
+[ext_resource type="PackedScene" uid="uid://bforvbb7alh1v" path="res://big floor top main.tscn" id="5_chaov"]
+[ext_resource type="PackedScene" uid="uid://0gh6jr76cq35" path="res://big floor right connect half.tscn" id="6_nm8qd"]
+[ext_resource type="PackedScene" uid="uid://cfpefh524jfu7" path="res://big floor left connect half.tscn" id="7_aq45b"]
 [ext_resource type="PackedScene" uid="uid://u4bos5oxde6x" path="res://level components/spike.tscn" id="8_aq45b"]
-[ext_resource type="PackedScene" path="res://background.tscn" id="9_jukch"]
+[ext_resource type="PackedScene" uid="uid://cpky803bml7ak" path="res://background.tscn" id="9_jukch"]
 [ext_resource type="PackedScene" uid="uid://djvwt5ox6hkr1" path="res://end.tscn" id="10_vcnes"]
 
 [node name="Node2D2" type="Node2D"]
@@ -19,7 +19,11 @@ anchor_mode = 0
 [node name="walls" parent="." instance=ExtResource("1_1bcrd")]
 
 [node name="player" parent="." instance=ExtResource("2_p65l6")]
-position = Vector2(296, 352)
+position = Vector2(151, 378)
+
+[node name="StaticBody2D43" parent="." instance=ExtResource("8_aq45b")]
+position = Vector2(-1682, 638)
+scale = Vector2(72.4, 1)
 
 [node name="StaticBody2D" parent="." instance=ExtResource("3_p65l6")]
 position = Vector2(398, 387)
@@ -164,4 +168,4 @@ show_behind_parent = true
 
 [node name="StaticBody2D" parent="StaticBody2D54" instance=ExtResource("10_vcnes")]
 position = Vector2(1097, 270)
-nextLVL = "res://lvl4.tscn"
+nextLVL = "res://Lvl4.tscn"

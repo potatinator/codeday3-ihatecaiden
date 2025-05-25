@@ -7,6 +7,8 @@ extends StaticBody2D
 var win : bool = false
 var done : bool = false
 
+var cancel = 100.0
+
 func _ready() -> void:
 	done = false
 	win = false
@@ -17,6 +19,10 @@ func end() -> void:
 	
 func _physics_process(delta: float) -> void:
 	animated_sprite_2d.visible = win
+	if (cancel <= 0.0):
+		done = true
+	if(win):
+		cancel -= 1.0
 	if (win && done):
 		get_tree().change_scene_to_file(nextLVL)
 
