@@ -1,6 +1,13 @@
 extends CharacterBody2D
 
 @onready var animated_sprite_2d = $AnimatedSprite2D 
+@onready var jumpSFX : AudioStreamPlayer2D = $jump
+@onready var winSFX: AudioStreamPlayer2D = $win
+@onready var digSFX: AudioStreamPlayer2D = $dig
+@onready var dieSFX: AudioStreamPlayer2D = $die
+@onready var storeSFX: AudioStreamPlayer2D = $store
+@onready var launchSFX: AudioStreamPlayer2D = $launch
+
 
 @export var speed : float = 150.0
 @export var airMulti : float = 1.0
@@ -18,6 +25,8 @@ var fric : float = 0.0;
 var multi : float = 1.0;
 
 signal dieSig
+func _ready() -> void:
+	dieSFX.play()
 
 func _ready() -> void:
 	animated_sprite_2d.visible = true
@@ -43,9 +52,13 @@ func _physics_process(delta: float):
 	
 	if(Input.is_action_pressed("jump") && is_on_floor()):
 		velocity.y = jump;
+		jumpSFX.play()
 	
 	if(Input.is_action_just_pressed("store")):
-		store()
+		if(stored.length() <= 0):
+			store()
+		else:
+			launch()
 	
 	if(velocity.length() > 20 && velocity.length() < 400):
 		if(is_on_floor()):
@@ -63,17 +76,17 @@ func _physics_process(delta: float):
 	move_and_slide()
 
 func store() -> void:
-	if(stored.length() <= 0.0):
-		stored += velocity*storeMulti
-		stored = stored.normalized() * clamp(stored.length(), 0.0, maxStored)
-		velocity = Vector2(0.0, 0.0)
-	else:
-		velocity += stored*Vector2(fric/airFric, 1.0)
-		stored = Vector2(0.0, 0.0)
+	stored += velocity*storeMulti
+	stored = stored.normalized() * clamp(stored.length(), 0.0, maxStored)
+	velocity = Vector2(0.0, 0.0)
+	storeSFX.play()
 
+func launch() -> void:
+	velocity += stored*Vector2(fric/airFric, 1.0)
+	stored = Vector2(0.0, 0.0)
+	launchSFX.play()
 
 func _on_area_2d_body_entered(body) -> void:
-	print("die")
 	die()
 
 func die() -> void:
