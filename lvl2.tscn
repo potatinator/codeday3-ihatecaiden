@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cfpefh524jfu7" path="res://big floor left connect half.tscn" id="7_aq45b"]
 [ext_resource type="PackedScene" uid="uid://u4bos5oxde6x" path="res://level components/spike.tscn" id="8_aq45b"]
 [ext_resource type="PackedScene" uid="uid://cpky803bml7ak" path="res://background.tscn" id="9_jukch"]
-[ext_resource type="PackedScene" path="res://end.tscn" id="10_vcnes"]
+[ext_resource type="PackedScene" uid="uid://dss7y3mnb8w5s" path="res://end.tscn" id="10_vcnes"]
 
 [node name="Node2D" type="Node2D"]
 
