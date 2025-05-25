@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://0jxdpkvkypb1" path="res://player/armadillo roll 225 degrees.png" id="4_6ct3r"]
 [ext_resource type="Texture2D" uid="uid://d2c1tsunyjh28" path="res://player/armadillo roll 315 degrees.png" id="5_1kp85"]
 [ext_resource type="AudioStream" uid="uid://ifrh1i6u3b7m" path="res://music/main_armadillo.wav" id="9_6ct3r"]
-[ext_resource type="AudioStream" uid="uid://cs14hpswogd65" path="res://music/jump.wav" id="10_wyqjk"]
+[ext_resource type="AudioStream" uid="uid://c276q124xlt1c" path="res://music/jumpppppp.wav" id="10_wyqjk"]
 [ext_resource type="AudioStream" uid="uid://r25q8thtyw4n" path="res://music/wincondition.wav" id="11_k85er"]
 [ext_resource type="AudioStream" uid="uid://cyhocd1layx8x" path="res://music/dig_down.wav" id="12_ebjds"]
 

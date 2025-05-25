@@ -44,7 +44,10 @@ func _physics_process(delta: float):
 		jumpSFX.play()
 	
 	if(Input.is_action_just_pressed("store")):
-		store()
+		if(stored.length() <= 0):
+			store()
+		else:
+			launch()
 	
 	if(velocity.length() > 20 && velocity.length() < 400):
 		if(is_on_floor()):
@@ -62,17 +65,15 @@ func _physics_process(delta: float):
 	move_and_slide()
 
 func store() -> void:
-	if(stored.length() <= 0.0):
-		stored += velocity*storeMulti
-		stored = stored.normalized() * clamp(stored.length(), 0.0, maxStored)
-		velocity = Vector2(0.0, 0.0)
-	else:
-		velocity += stored*Vector2(fric/airFric, 1.0)
-		stored = Vector2(0.0, 0.0)
+	stored += velocity*storeMulti
+	stored = stored.normalized() * clamp(stored.length(), 0.0, maxStored)
+	velocity = Vector2(0.0, 0.0)
 
+func launch() -> void:
+	velocity += stored*Vector2(fric/airFric, 1.0)
+	stored = Vector2(0.0, 0.0)
 
 func _on_area_2d_body_entered(body) -> void:
-	print("die")
 	die()
 
 func die() -> void:
