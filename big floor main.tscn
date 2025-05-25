@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://vinovhk52fgt"]
+
+[ext_resource type="Texture2D" uid="uid://cnm6mntlvf5an" path="res://big floor main.png" id="1_dt5yn"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_xe2of"]
+size = Vector2(100, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bu8al"]
+size = Vector2(100, 100.5)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+rotation = 3.14159
+mesh = SubResource("QuadMesh_xe2of")
+texture = ExtResource("1_dt5yn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.25)
+shape = SubResource("RectangleShape2D_bu8al")
