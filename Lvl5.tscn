@@ -9,11 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bcnoc83dge48c" path="res://level components/full tile with connection point on bottom side vert.tscn" id="7_7osck"]
 [ext_resource type="PackedScene" uid="uid://u4bos5oxde6x" path="res://level components/spike.tscn" id="8_7osck"]
 [ext_resource type="PackedScene" uid="uid://cpky803bml7ak" path="res://background.tscn" id="9_h4h6x"]
-<<<<<<< HEAD
-[ext_resource type="PackedScene" uid="uid://dss7y3mnb8w5s" path="res://end.tscn" id="10_blder"]
-=======
 [ext_resource type="PackedScene" uid="uid://djvwt5ox6hkr1" path="res://end.tscn" id="10_blder"]
->>>>>>> 5515268d5c18813eedb9a000d0251a0b1e699b94
 
 [node name="Node2D" type="Node2D"]
 
@@ -23,11 +19,7 @@ anchor_mode = 0
 [node name="walls" parent="." instance=ExtResource("1_csdyp")]
 
 [node name="player" parent="." instance=ExtResource("2_pb1uu")]
-<<<<<<< HEAD
-position = Vector2(280, 576)
-=======
 position = Vector2(272, 587)
->>>>>>> 5515268d5c18813eedb9a000d0251a0b1e699b94
 
 [node name="StaticBody2D7" parent="." instance=ExtResource("3_ndo3m")]
 position = Vector2(144, 597)
