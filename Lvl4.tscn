@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://ugqwvxgcwyx8"]
+[gd_scene load_steps=11 format=3 uid="uid://ugqwvxgcwyx8"]
 
 [ext_resource type="PackedScene" uid="uid://btw57klxaykkh" path="res://walls.tscn" id="1_7wywb"]
 [ext_resource type="PackedScene" uid="uid://drbulqxqdircb" path="res://character_body_2d.tscn" id="2_xtqqp"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://vinovhk52fgt" path="res://big floor main.tscn" id="7_w6ey8"]
 [ext_resource type="PackedScene" uid="uid://bcnoc83dge48c" path="res://level components/full tile with connection point on bottom side vert.tscn" id="8_f3kkn"]
 [ext_resource type="PackedScene" uid="uid://cpky803bml7ak" path="res://background.tscn" id="9_f3kkn"]
+[ext_resource type="PackedScene" path="res://end.tscn" id="10_5lowb"]
 
 [node name="Node2D2" type="Node2D"]
 
@@ -169,3 +170,8 @@ position = Vector2(1041, 240)
 
 [node name="StaticBody2D54" parent="." instance=ExtResource("9_f3kkn")]
 show_behind_parent = true
+
+[node name="StaticBody2D47" parent="." instance=ExtResource("10_5lowb")]
+show_behind_parent = true
+position = Vector2(1074, 584)
+nextLVL = "res://lvl5.tscn"
