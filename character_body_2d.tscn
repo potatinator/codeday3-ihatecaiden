@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://drbulqxqdircb"]
+[gd_scene load_steps=19 format=3 uid="uid://drbulqxqdircb"]
 
 [ext_resource type="Script" uid="uid://hgyqx601u7w" path="res://character_body_2d.gd" id="1_f50pn"]
 [ext_resource type="Texture2D" uid="uid://dhqfk3hhk3ff6" path="res://player/armadillo roll 45 degrees.png" id="2_4sjlk"]
@@ -13,6 +13,7 @@
 [ext_resource type="AudioStream" uid="uid://r25q8thtyw4n" path="res://music/wincondition.wav" id="11_k85er"]
 [ext_resource type="AudioStream" uid="uid://cyhocd1layx8x" path="res://music/dig_down.wav" id="12_ebjds"]
 [ext_resource type="AudioStream" uid="uid://6nkcyn8bb5ry" path="res://music/wooooooosh.wav" id="13_ebjds"]
+[ext_resource type="AudioStream" uid="uid://dthp8f8cn108c" path="res://music/shooow.wav" id="14_au0nh"]
 [ext_resource type="AudioStream" uid="uid://b7o8w0xxa838d" path="res://music/armadielo.wav" id="14_y1dt5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f50pn"]
@@ -112,6 +113,7 @@ stream = ExtResource("13_ebjds")
 volume_db = -5.0
 
 [node name="launch" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_au0nh")
 volume_db = -5.0
 
 [node name="die" type="AudioStreamPlayer2D" parent="."]
