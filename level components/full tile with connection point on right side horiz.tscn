@@ -16,5 +16,7 @@ mesh = SubResource("QuadMesh_ow5xn")
 texture = ExtResource("1_pinbb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
 position = Vector2(0, 3)
+
 shape = SubResource("RectangleShape2D_ld1un")
