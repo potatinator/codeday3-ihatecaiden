@@ -174,4 +174,4 @@ show_behind_parent = true
 [node name="StaticBody2D47" parent="." instance=ExtResource("10_5lowb")]
 show_behind_parent = true
 position = Vector2(1074, 584)
-nextLVL = "res://lvl5.tscn"
+nextLVL = "res://Lvl5.tscn"
