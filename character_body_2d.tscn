@@ -128,6 +128,7 @@ collision_mask = 4
 position = Vector2(0, -3)
 shape = SubResource("RectangleShape2D_ij6vw")
 debug_color = Color(0, 1, 0, 0.419608)
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="area_entered" from="Area2D2" to="." method="_on_area_2d_2_area_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_area_2d_body_entered"]

@@ -27,8 +27,6 @@ var multi : float = 1.0;
 signal dieSig
 func _ready() -> void:
 	dieSFX.play()
-
-func _ready() -> void:
 	animated_sprite_2d.visible = true
 
 func _physics_process(delta: float):
