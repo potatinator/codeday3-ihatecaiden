@@ -17,7 +17,7 @@ anchor_mode = 0
 [node name="walls" parent="." instance=ExtResource("1_7wywb")]
 
 [node name="player" parent="." instance=ExtResource("2_xtqqp")]
-position = Vector2(144, 600)
+position = Vector2(80, 576)
 
 [node name="StaticBody2D" parent="." instance=ExtResource("3_xtqqp")]
 position = Vector2(144, 632)
@@ -107,61 +107,277 @@ position = Vector2(1144, 397)
 position = Vector2(1144, 296)
 
 [node name="StaticBody2D28" parent="." instance=ExtResource("4_hqhqe")]
-position = Vector2(936, 248)
+position = Vector2(944, 240)
 
 [node name="StaticBody2D29" parent="." instance=ExtResource("4_jy7ga")]
-position = Vector2(880, 288)
+position = Vector2(888, 280)
 rotation = -1.5708
 
 [node name="StaticBody2D30" parent="." instance=ExtResource("4_jy7ga")]
-position = Vector2(880, 304)
+position = Vector2(888, 296)
 rotation = -1.5708
 
 [node name="StaticBody2D31" parent="." instance=ExtResource("4_jy7ga")]
-position = Vector2(880, 320)
+position = Vector2(888, 312)
 rotation = -1.5708
 
 [node name="StaticBody2D32" parent="." instance=ExtResource("4_hqhqe")]
-position = Vector2(1032, 248)
+position = Vector2(1040, 240)
 
 [node name="StaticBody2D33" parent="." instance=ExtResource("4_hqhqe")]
-position = Vector2(1088, 248)
+position = Vector2(1112, 240)
 
 [node name="StaticBody2D34" parent="." instance=ExtResource("4_jy7ga")]
-position = Vector2(896, 240)
+position = Vector2(904, 232)
 
 [node name="StaticBody2D35" parent="." instance=ExtResource("4_jy7ga")]
-position = Vector2(880, 240)
+position = Vector2(888, 232)
 
 [node name="StaticBody2D36" parent="." instance=ExtResource("4_jy7ga")]
-position = Vector2(864, 240)
+position = Vector2(872, 232)
 
 [node name="StaticBody2D37" parent="." instance=ExtResource("4_jy7ga")]
 position = Vector2(728, 336)
 
 [node name="StaticBody2D38" parent="." instance=ExtResource("4_jy7ga")]
-position = Vector2(912, 240)
+position = Vector2(920, 232)
 
 [node name="StaticBody2D39" parent="." instance=ExtResource("4_jy7ga")]
-position = Vector2(960, 240)
+position = Vector2(968, 232)
 
 [node name="StaticBody2D40" parent="." instance=ExtResource("4_jy7ga")]
-position = Vector2(944, 240)
+position = Vector2(952, 232)
 
 [node name="StaticBody2D41" parent="." instance=ExtResource("4_jy7ga")]
-position = Vector2(928, 240)
+position = Vector2(936, 232)
 
 [node name="StaticBody2D42" parent="." instance=ExtResource("4_jy7ga")]
-position = Vector2(976, 240)
-
-[node name="StaticBody2D43" parent="." instance=ExtResource("4_jy7ga")]
-position = Vector2(1025, 240)
+position = Vector2(984, 232)
 
 [node name="StaticBody2D44" parent="." instance=ExtResource("4_jy7ga")]
-position = Vector2(1009, 240)
+position = Vector2(1017, 232)
 
 [node name="StaticBody2D45" parent="." instance=ExtResource("4_jy7ga")]
-position = Vector2(993, 240)
+position = Vector2(1001, 232)
+
+[node name="StaticBody2D43" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(8, -8)
 
 [node name="StaticBody2D46" parent="." instance=ExtResource("4_jy7ga")]
-position = Vector2(1041, 240)
+position = Vector2(-8, -8)
+
+[node name="StaticBody2D47" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(-24, -8)
+
+[node name="StaticBody2D48" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(24, -8)
+
+[node name="StaticBody2D49" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(72, -8)
+
+[node name="StaticBody2D50" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(56, -8)
+
+[node name="StaticBody2D51" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(40, -8)
+
+[node name="StaticBody2D52" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(88, -8)
+
+[node name="StaticBody2D53" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(121, -8)
+
+[node name="StaticBody2D54" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(105, -8)
+
+[node name="StaticBody2D55" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(170, -8)
+
+[node name="StaticBody2D56" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(154, -8)
+
+[node name="StaticBody2D57" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(138, -8)
+
+[node name="StaticBody2D58" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(186, -8)
+
+[node name="StaticBody2D59" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(234, -8)
+
+[node name="StaticBody2D60" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(218, -8)
+
+[node name="StaticBody2D61" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(202, -8)
+
+[node name="StaticBody2D62" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(250, -8)
+
+[node name="StaticBody2D63" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(283, -8)
+
+[node name="StaticBody2D64" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(267, -8)
+
+[node name="StaticBody2D65" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(328, -8)
+
+[node name="StaticBody2D66" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(312, -8)
+
+[node name="StaticBody2D67" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(296, -8)
+
+[node name="StaticBody2D68" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(344, -8)
+
+[node name="StaticBody2D69" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(392, -8)
+
+[node name="StaticBody2D70" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(376, -8)
+
+[node name="StaticBody2D71" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(360, -8)
+
+[node name="StaticBody2D72" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(408, -8)
+
+[node name="StaticBody2D73" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(441, -8)
+
+[node name="StaticBody2D74" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(425, -8)
+
+[node name="StaticBody2D75" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(488, -8)
+
+[node name="StaticBody2D76" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(472, -8)
+
+[node name="StaticBody2D77" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(456, -8)
+
+[node name="StaticBody2D78" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(504, -8)
+
+[node name="StaticBody2D79" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(552, -8)
+
+[node name="StaticBody2D80" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(536, -8)
+
+[node name="StaticBody2D81" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(520, -8)
+
+[node name="StaticBody2D82" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(568, -8)
+
+[node name="StaticBody2D83" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(601, -8)
+
+[node name="StaticBody2D84" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(585, -8)
+
+[node name="StaticBody2D85" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(650, -8)
+
+[node name="StaticBody2D86" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(634, -8)
+
+[node name="StaticBody2D87" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(618, -8)
+
+[node name="StaticBody2D88" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(666, -8)
+
+[node name="StaticBody2D89" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(714, -8)
+
+[node name="StaticBody2D90" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(698, -8)
+
+[node name="StaticBody2D91" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(682, -8)
+
+[node name="StaticBody2D92" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(730, -8)
+
+[node name="StaticBody2D93" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(763, -8)
+
+[node name="StaticBody2D94" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(747, -8)
+
+[node name="StaticBody2D95" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(808, -8)
+
+[node name="StaticBody2D96" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(792, -8)
+
+[node name="StaticBody2D97" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(776, -8)
+
+[node name="StaticBody2D98" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(824, -8)
+
+[node name="StaticBody2D99" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(872, -8)
+
+[node name="StaticBody2D100" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(856, -8)
+
+[node name="StaticBody2D101" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(840, -8)
+
+[node name="StaticBody2D102" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(888, -8)
+
+[node name="StaticBody2D103" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(921, -8)
+
+[node name="StaticBody2D104" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(905, -8)
+
+[node name="StaticBody2D105" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(970, -8)
+
+[node name="StaticBody2D106" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(954, -8)
+
+[node name="StaticBody2D107" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(938, -8)
+
+[node name="StaticBody2D108" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(986, -8)
+
+[node name="StaticBody2D109" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(1034, -8)
+
+[node name="StaticBody2D110" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(1018, -8)
+
+[node name="StaticBody2D111" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(1002, -8)
+
+[node name="StaticBody2D112" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(1050, -8)
+
+[node name="StaticBody2D113" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(1083, -8)
+
+[node name="StaticBody2D114" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(1067, -8)
+
+[node name="StaticBody2D115" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(1132, -8)
+
+[node name="StaticBody2D116" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(1116, -8)
+
+[node name="StaticBody2D117" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(1100, -8)
+
+[node name="StaticBody2D118" parent="." instance=ExtResource("4_jy7ga")]
+position = Vector2(1148, -8)
