@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://l45e7703q3ep"
+=======
+uid="uid://f1kwnru0c6wn"
+>>>>>>> 5515268d5c18813eedb9a000d0251a0b1e699b94
 path="res://.godot/imported/New Game Project.apple-touch-icon.png-1053edc047b72a587254f5a6b8dac3dd.ctex"
 metadata={
 "vram_texture": false
