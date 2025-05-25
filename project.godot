@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="New Game Project"
-run/main_scene="uid://dcnoonskfljwv"
+run/main_scene="uid://tjhg36urlf05"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -46,6 +46,7 @@ store={
 [layer_names]
 
 2d_physics/layer_2="kill"
+2d_physics/layer_3="win"
 
 [rendering]
 

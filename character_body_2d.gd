@@ -19,6 +19,9 @@ var multi : float = 1.0;
 
 signal dieSig
 
+func _ready() -> void:
+	animated_sprite_2d.visible = true
+
 func _physics_process(delta: float):
 	velocity.y += clamp(GRAV*delta, -maxFall, maxFall)
 	if (is_on_floor()):
@@ -76,3 +79,6 @@ func _on_area_2d_body_entered(body) -> void:
 func die() -> void:
 	dieSig.emit()
 	get_tree().reload_current_scene()
+
+func _on_area_2d_2_area_entered(area: Area2D) -> void:
+	animated_sprite_2d.visible = false
