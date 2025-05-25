@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://kdsw3yl6q7mg"]
+[gd_scene load_steps=11 format=3 uid="uid://b3n4kwinsmbm2"]
 
 [ext_resource type="PackedScene" uid="uid://btw57klxaykkh" path="res://walls.tscn" id="1_1bcrd"]
 [ext_resource type="PackedScene" uid="uid://drbulqxqdircb" path="res://character_body_2d.tscn" id="2_p65l6"]
@@ -165,6 +165,7 @@ position = Vector2(959, 304)
 
 [node name="StaticBody2D54" parent="." instance=ExtResource("9_jukch")]
 show_behind_parent = true
+position = Vector2(0, -3)
 
 [node name="StaticBody2D" parent="StaticBody2D54" instance=ExtResource("10_vcnes")]
 position = Vector2(1097, 270)
