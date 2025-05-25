@@ -47,6 +47,7 @@ store={
 [layer_names]
 
 2d_physics/layer_2="kill"
+2d_physics/layer_3="win"
 
 [rendering]
 

@@ -1,0 +1,124 @@
+[gd_scene load_steps=25 format=3 uid="uid://djvwt5ox6hkr1"]
+
+[ext_resource type="Texture2D" path="res://end.png" id="1_n735c"]
+[ext_resource type="Script" path="res://win.gd" id="2_egc6y"]
+[ext_resource type="Texture2D" path="res://end animation/end 1.png" id="3_hlww3"]
+[ext_resource type="Texture2D" path="res://end animation/end 2.png" id="4_ol4y7"]
+[ext_resource type="Texture2D" path="res://end animation/end 3.png" id="5_qhkgd"]
+[ext_resource type="Texture2D" path="res://end animation/end 4.png" id="6_uvgpo"]
+[ext_resource type="Texture2D" path="res://end animation/end 5.png" id="7_tx5yu"]
+[ext_resource type="Texture2D" path="res://end animation/end 7.png" id="8_46nwd"]
+[ext_resource type="Texture2D" path="res://end animation/end 8.png" id="9_31upl"]
+[ext_resource type="Texture2D" path="res://end animation/end 9.png" id="10_okgvq"]
+[ext_resource type="Texture2D" path="res://end animation/end 10.png" id="11_1qndq"]
+[ext_resource type="Texture2D" path="res://end animation/end 11.png" id="12_8syjp"]
+[ext_resource type="Texture2D" path="res://end animation/end 12.png" id="13_r7fym"]
+[ext_resource type="Texture2D" path="res://end animation/end 13.png" id="14_2lcc4"]
+[ext_resource type="Texture2D" path="res://end animation/end 14.png" id="15_pqcue"]
+[ext_resource type="Texture2D" path="res://end animation/end 15.png" id="16_s4ed7"]
+[ext_resource type="Texture2D" path="res://end animation/end 16.png" id="17_e6rxa"]
+[ext_resource type="Texture2D" path="res://end animation/end 17.png" id="18_m0oet"]
+[ext_resource type="Texture2D" path="res://end animation/end 18.png" id="19_4i7on"]
+[ext_resource type="Texture2D" path="res://end animation/end 19.png" id="20_m07gb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_75yvt"]
+size = Vector2(100, 25)
+
+[sub_resource type="QuadMesh" id="QuadMesh_egc6y"]
+size = Vector2(100, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lt2ag"]
+size = Vector2(101, 53)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0lh3u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_hlww3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ol4y7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qhkgd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_uvgpo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_tx5yu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_46nwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_31upl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_okgvq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1qndq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_8syjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_r7fym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_2lcc4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_pqcue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_s4ed7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_e6rxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_m0oet")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_4i7on")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_m07gb")
+}],
+"loop": false,
+"name": &"win",
+"speed": 15.0
+}]
+
+[node name="StaticBody2D2" type="StaticBody2D"]
+script = ExtResource("2_egc6y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 37)
+shape = SubResource("RectangleShape2D_75yvt")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+scale = Vector2(1, -1)
+mesh = SubResource("QuadMesh_egc6y")
+texture = ExtResource("1_n735c")
+
+[node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(1, -1)
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.5, 3.5)
+shape = SubResource("RectangleShape2D_lt2ag")
+debug_color = Color(0, 1, 0, 0.419608)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0lh3u")
+animation = &"win"
+frame = 17
+frame_progress = 1.0
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

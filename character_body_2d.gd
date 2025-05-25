@@ -2,6 +2,12 @@ extends CharacterBody2D
 
 @onready var animated_sprite_2d = $AnimatedSprite2D 
 @onready var jumpSFX : AudioStreamPlayer2D = $jump
+@onready var winSFX: AudioStreamPlayer2D = $win
+@onready var digSFX: AudioStreamPlayer2D = $dig
+@onready var dieSFX: AudioStreamPlayer2D = $die
+@onready var storeSFX: AudioStreamPlayer2D = $store
+@onready var launchSFX: AudioStreamPlayer2D = $launch
+
 
 @export var speed : float = 150.0
 @export var airMulti : float = 1.0
@@ -19,6 +25,8 @@ var fric : float = 0.0;
 var multi : float = 1.0;
 
 signal dieSig
+func _ready() -> void:
+	dieSFX.play()
 
 func _physics_process(delta: float):
 	velocity.y += clamp(GRAV*delta, -maxFall, maxFall)
@@ -68,10 +76,12 @@ func store() -> void:
 	stored += velocity*storeMulti
 	stored = stored.normalized() * clamp(stored.length(), 0.0, maxStored)
 	velocity = Vector2(0.0, 0.0)
+	storeSFX.play()
 
 func launch() -> void:
 	velocity += stored*Vector2(fric/airFric, 1.0)
 	stored = Vector2(0.0, 0.0)
+	launchSFX.play()
 
 func _on_area_2d_body_entered(body) -> void:
 	die()
