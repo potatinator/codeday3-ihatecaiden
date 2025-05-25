@@ -9,7 +9,11 @@
 [ext_resource type="PackedScene" uid="uid://bcnoc83dge48c" path="res://level components/full tile with connection point on bottom side vert.tscn" id="7_7osck"]
 [ext_resource type="PackedScene" uid="uid://u4bos5oxde6x" path="res://level components/spike.tscn" id="8_7osck"]
 [ext_resource type="PackedScene" uid="uid://cpky803bml7ak" path="res://background.tscn" id="9_h4h6x"]
+<<<<<<< HEAD
+[ext_resource type="PackedScene" uid="uid://dss7y3mnb8w5s" path="res://end.tscn" id="10_blder"]
+=======
 [ext_resource type="PackedScene" uid="uid://djvwt5ox6hkr1" path="res://end.tscn" id="10_blder"]
+>>>>>>> 5515268d5c18813eedb9a000d0251a0b1e699b94
 
 [node name="Node2D" type="Node2D"]
 
@@ -19,7 +23,11 @@ anchor_mode = 0
 [node name="walls" parent="." instance=ExtResource("1_csdyp")]
 
 [node name="player" parent="." instance=ExtResource("2_pb1uu")]
+<<<<<<< HEAD
+position = Vector2(280, 576)
+=======
 position = Vector2(272, 587)
+>>>>>>> 5515268d5c18813eedb9a000d0251a0b1e699b94
 
 [node name="StaticBody2D7" parent="." instance=ExtResource("3_ndo3m")]
 position = Vector2(144, 597)
@@ -156,9 +164,6 @@ position = Vector2(560, 404)
 [node name="StaticBody2D45" parent="." instance=ExtResource("6_vg5ba")]
 position = Vector2(560, 312)
 
-[node name="StaticBody2D46" parent="." instance=ExtResource("6_vg5ba")]
-position = Vector2(560, 432)
-
 [node name="StaticBody2D47" parent="." instance=ExtResource("8_7osck")]
 position = Vector2(1040, 417)
 rotation = 3.14159
@@ -185,6 +190,7 @@ position = Vector2(1080, 392)
 
 [node name="StaticBody2D54" parent="." instance=ExtResource("9_h4h6x")]
 show_behind_parent = true
+position = Vector2(0, 8)
 
 [node name="StaticBody2D55" parent="." instance=ExtResource("10_blder")]
 show_behind_parent = true
