@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @onready var animated_sprite_2d = $AnimatedSprite2D 
+@onready var jumpSFX : AudioStreamPlayer2D = $jump
 
 @export var speed : float = 150.0
 @export var airMulti : float = 1.0
@@ -40,6 +41,7 @@ func _physics_process(delta: float):
 	
 	if(Input.is_action_pressed("jump") && is_on_floor()):
 		velocity.y = jump;
+		jumpSFX.play()
 	
 	if(Input.is_action_just_pressed("store")):
 		store()
