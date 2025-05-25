@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://c42f6yum2e6tl"]
+[gd_scene load_steps=4 format=3 uid="uid://dicbnc3o02uqm"]
 
-[ext_resource type="PackedScene" uid="uid://btw57klxaykkh" path="res://walls.tscn" id="1_gf1y6"]
-[ext_resource type="PackedScene" uid="uid://drbulqxqdircb" path="res://character_body_2d.tscn" id="2_xwvkb"]
+[ext_resource type="PackedScene" path="res://walls.tscn" id="1_gf1y6"]
+[ext_resource type="PackedScene" path="res://character_body_2d.tscn" id="2_xwvkb"]
 [ext_resource type="PackedScene" uid="uid://bv637t6hemq5w" path="res://level components/full tile with connection point on both sides horiz.tscn" id="3_xwvkb"]
 
 [node name="Node2D" type="Node2D"]
