@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://urwo1fb5ogpd"
-path="res://.godot/imported/piskel_logo_transparent_small_compact.png-5cd43a35bd540fe698efb75f703be6d7.ctex"
+path="res://.godot/imported/piskel_logo_transparent_small_compact.png-cd4b238c2511052b1e5a609702217702.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://background_files/piskel_logo_transparent_small_compact.png"
-dest_files=["res://.godot/imported/piskel_logo_transparent_small_compact.png-5cd43a35bd540fe698efb75f703be6d7.ctex"]
+source_file="res://background_files - Copy/piskel_logo_transparent_small_compact.png"
+dest_files=["res://.godot/imported/piskel_logo_transparent_small_compact.png-cd4b238c2511052b1e5a609702217702.ctex"]
 
 [params]
 
