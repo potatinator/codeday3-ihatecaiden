@@ -24,7 +24,6 @@ anchor_mode = 0
 position = Vector2(189, 472)
 
 [node name="StaticBody2D54" parent="." instance=ExtResource("3_ht4u2")]
-visible = false
 show_behind_parent = true
 position = Vector2(-2, -3)
 
