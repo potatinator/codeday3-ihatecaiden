@@ -187,4 +187,5 @@ position = Vector2(0, 8)
 [node name="StaticBody2D55" parent="." instance=ExtResource("10_blder")]
 show_behind_parent = true
 position = Vector2(1073, 344)
+
 nextLVL = "res://Lvl6.tscn"

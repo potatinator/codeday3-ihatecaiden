@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bntixfyq332kk"]
+
+[ext_resource type="Texture2D" uid="uid://c0f6prn1u50ui" path="res://store m.png" id="1_oppxc"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+
+[node name="StoreM" type="Sprite2D" parent="."]
+texture = ExtResource("1_oppxc")

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bn62dk5uldnm1"]
+
+[ext_resource type="Texture2D" uid="uid://chug7v33u4smh" path="res://movement.png" id="1_rbikc"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+
+[node name="Movement" type="Sprite2D" parent="."]
+texture = ExtResource("1_rbikc")

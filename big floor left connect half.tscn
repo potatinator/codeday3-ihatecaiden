@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cfpefh524jfu7"]
 
-[ext_resource type="Texture2D" uid="uid://cdh8y7t4c1jc4" path="res://big floor right connect half.png" id="1_1534u"]
+[ext_resource type="Texture2D" uid="uid://m6k8rhleqdyy" path="res://big floor right connect half.png" id="1_1534u"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_qb4u4"]
 size = Vector2(100, 100)
