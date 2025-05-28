@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c4q0dkp1c85uh"]
 
-[ext_resource type="Texture2D" uid="uid://22dr7ht5spf3" path="res://textures/full tile with connection point on left side1 horiz.png" id="1_pinbb"]
+[ext_resource type="Texture2D" uid="uid://dtmimo4pmgqxd" path="res://textures/full tile with connection point on left side1 horiz.png" id="1_pinbb"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_ow5xn"]
 size = Vector2(100, 100)
@@ -16,8 +16,5 @@ mesh = SubResource("QuadMesh_ow5xn")
 texture = ExtResource("1_pinbb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-
 position = Vector2(0, 3)
-
-
 shape = SubResource("RectangleShape2D_ld1un")
