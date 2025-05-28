@@ -182,7 +182,6 @@ position = Vector2(1080, 392)
 
 [node name="StaticBody2D54" parent="." instance=ExtResource("9_h4h6x")]
 show_behind_parent = true
-position = Vector2(0, 8)
 
 [node name="StaticBody2D55" parent="." instance=ExtResource("10_blder")]
 show_behind_parent = true
